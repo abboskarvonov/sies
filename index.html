@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html id="html" class="filter-no" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <!-- <div class="load"></div> -->
+        <!-- <div class="count"></div> -->
+        <div class="loader-circle">
+            <span style="--i: 1;"></span>
+            <span style="--i: 2;"></span>
+            <span style="--i: 3;"></span>
+            <span style="--i: 4;"></span>
+            <span style="--i: 5;"></span>
+            <span style="--i: 6;"></span>
+            <span style="--i: 7;"></span>
+            <span style="--i: 8;"></span>
+            <span style="--i: 9;"></span>
+            <span style="--i: 10;"></span>
+            <span style="--i: 11;"></span>
+            <span style="--i: 12;"></span>
+            <span style="--i: 13;"></span>
+            <span style="--i: 14;"></span>
+            <span style="--i: 15;"></span>
+            <span style="--i: 16;"></span>
+            <span style="--i: 17;"></span>
+            <span style="--i: 18;"></span>
+            <span style="--i: 19;"></span>
+            <span style="--i: 20;"></span>
+        </div>
+        <div class="ring"></div>
+        <img src="./img/logo-white-min.png" class="img-loader" alt="">
+    </div>
+    <!-- End Loader -->
+
+    <!-- Canvas -->
+    <div id="left-bar" class="left-bar left-bar-deactive"><a href="#offcanvasExample" data-bs-toggle="offcanvas"
+            role="button" aria-controls="offcanvasExample"><i class="fa fa-bars"></i></a></div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container ps-5">
+                <form action="" method="get">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Qidiruv"
+                            aria-label="Qidiruv" aria-describedby="basic-addon2">
+                        <button type="submit" class="btn btn-outline-primary"><i class="fa fa-search"></i></button>
+                    </div>
+                </form>
+                <img src="http://sies.uz/img/2021.jpg" class="img-thumbnail" alt="">
+                <div class="widget mt-4 p-3">
+                    <div class="widget-head">
+                        <h2 class="widget-title">Tug'ilgan kuningiz bilan!</h2>
+                    </div>
+                    <div class="widget-body">
+                        <div class="widget-elem">
+                            Ismatov O'tkir Rustamovich
+                        </div>
+                    </div>
+                </div>
+                <div class="widget mt-4 p-3">
+                    <div class="widget-head">
+                        <h2 class="widget-title">E'lonlar</h2>
+                    </div>
+                    <div class="widget-body">
+                        <div class="widget-elem">
+                            <a href="#">Ахмеджонов Азиз Рустамови...</a>
+                            <i class="far fa-calendar-alt"></i> 2021-09-15
+                            <i class="far fa-eye"></i> 10
+                        </div>
+                        <div class="widget-elem">
+                            <a href="#">Ахмеджонов Азиз Рустамови...</a>
+                            <i class="far fa-calendar-alt"></i> 2021-09-15
+                            <i class="far fa-eye"></i> 10
+                        </div>
+                        <div class="widget-elem">
+                            <a href="#">Ахмеджонов Азиз Рустамови...</a>
+                            <i class="far fa-calendar-alt"></i> 2021-09-15
+                            <i class="far fa-eye"></i> 10
+                        </div>
+                    </div>
+                </div>
+                <div class="widget mt-4 p-3">
+                    <div class="widget-head">
+                        <h2 class="widget-title">Eng ko'p o'qiladigan yangiliklar</h2>
+                    </div>
+                    <div class="widget-body">
+                        <div class="widget-elem">
+                            <a href="#">Ахмеджонов Азиз Рустамови...</a>
+                            <i class="far fa-calendar-alt"></i> 2021-09-15
+                            <i class="far fa-eye"></i> 10
+                        </div>
+                        <div class="widget-elem">
+                            <a href="#">Ахмеджонов Азиз Рустамови...</a>
+                            <i class="far fa-calendar-alt"></i> 2021-09-15
+                            <i class="far fa-eye"></i> 10
+                        </div>
+                        <div class="widget-elem">
+                            <a href="#">Ахмеджонов Азиз Рустамови...</a>
+                            <i class="far fa-calendar-alt"></i> 2021-09-15
+                            <i class="far fa-eye"></i> 10
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shadow -->
+    <div class="shadow"></div>
+
+    <div class="container-fluid p-0 fixed-top">
+        <!-- Header -->
+        <div id="header" class="container-fluid bg-menu shadow-menu header">
+            <div class="container header-top">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-6 col-sm-12">
+                        <nav class="nav align-items-center justify-content-center justify-content-md-start">
+                            <a href="#" class="nav-link"><img src="img/flag.png" alt=""></a>
+                            <a href="#" class="nav-link"><img src="img/gerb.png" alt=""></a>
+                            <a href="#" class="nav-link"><i class="fa fa-music pt-1"></i></a>
+                            <a href="#" class="nav-link"><i class="fa fa-envelope"></i></a>
+                            <a href="#" class="nav-link"><i class="fa fa-phone" title="Tooltip on right"></i></a>
+                            <a href="#" class="nav-link"><i class="far fa-eye"></i></a>
+                            <a href="#" class="nav-link"><i class="fa fa-sitemap"></i></a>
+                            <a href="#" class="nav-link"><img src="img/moodle.png" alt=""></a>
+                        </nav>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-4">
+                        <nav class="nav justify-content-md-end justify-content-start">
+                            <a href="#" class="nav-link"><i class="fab fa-telegram-plane"></i></a>
+                            <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="nav-link"><i class="fab fa-youtube"></i></a>
+                        </nav>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-4">
+                        <nav class="nav justify-content-start justify-content-lg-end">
+                            <a href="#" onclick="plus()" class="nav-link a">A+</a>
+                            <a href="#" onclick="def()" class="nav-link a">A</a>
+                            <a href="#" onclick="minus()" class="nav-link a">A-</a>
+                            <a href="#" onclick="adjus()" class="nav-link"><i class="fa fa-adjust"></i></a>
+                        </nav>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-4">
+                        <nav class="nav justify-content-end">
+                            <a href="#" class="nav-link"><img src="img/uz.png" alt=""></a>
+                            <a href="#" class="nav-link"><img src="img/ru.png" alt=""></a>
+                            <a href="#" class="nav-link"><img src="img/en.png" alt=""></a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <nav id="nav" class="navbar navbar-expand-xl navbar-light">
+            <div class="container">
+                <a href="#" class="navbar-brand"><img src="img/logo-white-min.png" width="70px" alt=""></a>
+                <a href="#" class="logo-text text-white text-center">Samarqand<br>iqtisodiyot va servis<br>instituti</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Yangiliklar
+                            </a>
+                            <ul class="dropdown-menu p-0 p-md-5" aria-labelledby="navbarDropdown">
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Tuzilma
+                            </a>
+                            <ul class="dropdown-menu p-0 p-md-5" aria-labelledby="navbarDropdown">
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Faoliyat
+                            </a>
+                            <ul class="dropdown-menu p-0 p-md-5" aria-labelledby="navbarDropdown">
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Abituriyent
+                            </a>
+                            <ul class="dropdown-menu p-0 p-md-5" aria-labelledby="navbarDropdown">
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Talabalar
+                            </a>
+                            <ul class="dropdown-menu p-0 p-md-5" aria-labelledby="navbarDropdown">
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Interaktiv
+                            </a>
+                            <ul class="dropdown-menu p-0 p-md-5" aria-labelledby="navbarDropdown">
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Hujjat
+                            </a>
+                            <ul class="dropdown-menu p-0 p-md-5" aria-labelledby="navbarDropdown">
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="container header-bottom">
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <nav class="nav align-items-center justify-content-center justify-content-md-start">
+                                    <a href="#" class="nav-link"><img src="img/flag.png" alt=""></a>
+                                    <a href="#" class="nav-link"><img src="img/gerb.png" alt=""></a>
+                                    <a href="#" class="nav-link"><i class="fa fa-music pt-1"></i></a>
+                                    <a href="#" class="nav-link"><i class="fa fa-envelope"></i></a>
+                                    <a href="#" class="nav-link"><i class="fa fa-phone" title="Tooltip on right"></i></a>
+                                    <a href="#" class="nav-link"><i class="far fa-eye"></i></a>
+                                    <a href="#" class="nav-link"><i class="fa fa-sitemap"></i></a>
+                                    <a href="#" class="nav-link"><img src="img/moodle.png" alt=""></a>
+                                </nav>
+                            </div>
+                            <div class="col-3">
+                                <nav class="nav justify-content-md-end justify-content-start">
+                                    <a href="#" class="nav-link"><i class="fab fa-telegram-plane"></i></a>
+                                    <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                                </nav>
+                            </div>
+                            <div class="col-5">
+                                <nav class="nav justify-content-center">
+                                    <a href="#" onclick="plus()" class="nav-link a">A+</a>
+                                    <a href="#" onclick="def()" class="nav-link a">A</a>
+                                    <a href="#" onclick="minus()" class="nav-link a">A-</a>
+                                    <a href="#" onclick="adjus()" class="nav-link"><i class="fa fa-adjust"></i></a>
+                                </nav>
+                            </div>
+                            <div class="col-4">
+                                <nav class="nav justify-content-end">
+                                    <a href="#" class="nav-link"><img src="img/uz.png" alt=""></a>
+                                    <a href="#" class="nav-link"><img src="img/ru.png" alt=""></a>
+                                    <a href="#" class="nav-link"><img src="img/en.png" alt=""></a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Slider -->
+    <div class="swiper mySwiper wow fadeInUpBig">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="http://sies.uz/frontend/web/images/slider/slider_006094097131bc1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="http://sies.uz/frontend/web/images/slider/slider_0060940d0193ac9.jpg" alt="">
+            </div>
+            <div class="swiper-slide"><img src="http://sies.uz/frontend/web/images/slider/slider_0060940b97ab882.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+        <a href="#content" class="text-dark">
+            <div class="bottom-scroll"><i class="fa fa-arrow-down"></i></div>
+        </a>
+    </div>
+    <!-- News -->
+    <div class="container-fluid">
+        <div class="container pt-5 mt-5 pb-4 mb-4" id="content">
+            <!-- News -->
+            <h3 class="text-center wow fadeInDownBig news-title text-primary mb-5">So'nggi yangiliklar</h3>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card" style="width: 100%;">
+                        <img src="http://sies.uz/frontend/web/images/pages/photo_0061362e62bd30f.jpg"
+                            class="obj-news-img card-img-top wow fadeInDownBig" alt="...">
+                        <div class="date">
+                            <i class="fa fa-calendar"></i> 2021-09-06
+                            <i class="fa fa-eye"></i> 10
+                        </div>
+                        <div class="card-body wow fadeInUpBig">
+                            <h5 class="card-title">Title</h5>
+                            <p class="card-text">Some text of the content</p>
+                            <a href="#" class="btn btn-primary">Batafsil</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card" style="width: 100%;">
+                        <img src="http://sies.uz/frontend/web/images/pages/photo_0061417cf55eff0.png"
+                            class="obj-news-img card-img-top wow fadeInDownBig" alt="...">
+                        <div class="date">
+                            <i class="fa fa-calendar"></i> 2021-09-06
+                            <i class="fa fa-eye"></i> 10
+                        </div>
+                        <div class="card-body wow fadeInUpBig">
+                            <h5 class="card-title">Title</h5>
+                            <p class="card-text">Some text of the content</p>
+                            <a href="#" class="btn btn-primary">Batafsil</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card" style="width: 100%;">
+                        <img src="http://sies.uz/frontend/web/images/pages/photo_0061417cf55eff0.png"
+                            class="obj-news-img card-img-top wow fadeInDownBig" alt="...">
+                        <div class="date">
+                            <i class="fa fa-calendar"></i> 2021-09-06
+                            <i class="fa fa-eye"></i> 10
+                        </div>
+                        <div class="card-body wow fadeInUpBig">
+                            <h5 class="card-title">Title</h5>
+                            <p class="card-text">Some text of the content</p>
+                            <a href="#" class="btn btn-primary">Batafsil</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-outline-primary btn-lg">Barchasi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Elonlar -->
+    <div class="container pt-1 pb-5 mb-5">
+        <!-- News -->
+        <h3 class="text-center wow fadeInDownBig news-title text-primary mb-5">So'nggi e'lonlar</h3>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img src="http://sies.uz/frontend/web/images/pages/photo_0061362e62bd30f.jpg"
+                        class="obj-news-img card-img-top wow fadeInDownBig" alt="...">
+                    <div class="date">
+                        <i class="fa fa-calendar"></i> 2021-09-06
+                        <i class="fa fa-eye"></i> 10
+                    </div>
+                    <div class="card-body wow fadeInUpBig">
+                        <h5 class="card-title">Title</h5>
+                        <p class="card-text">Some text of the content</p>
+                        <a href="#" class="btn btn-primary">Batafsil</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img src="http://sies.uz/frontend/web/images/pages/photo_0061417cf55eff0.png"
+                        class="obj-news-img card-img-top wow fadeInDownBig" alt="...">
+                    <div class="date">
+                        <i class="fa fa-calendar"></i> 2021-09-06
+                        <i class="fa fa-eye"></i> 10
+                    </div>
+                    <div class="card-body wow fadeInUpBig">
+                        <h5 class="card-title">Title</h5>
+                        <p class="card-text">Some text of the content</p>
+                        <a href="#" class="btn btn-primary">Batafsil</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img src="http://sies.uz/frontend/web/images/pages/photo_0061417cf55eff0.png"
+                        class="obj-news-img card-img-top wow fadeInDownBig" alt="...">
+                    <div class="date">
+                        <i class="fa fa-calendar"></i> 2021-09-06
+                        <i class="fa fa-eye"></i> 10
+                    </div>
+                    <div class="card-body wow fadeInUpBig">
+                        <h5 class="card-title">Title</h5>
+                        <p class="card-text">Some text of the content</p>
+                        <a href="#" class="btn btn-primary">Batafsil</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-outline-primary btn-lg">Barchasi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Statistic -->
+    <div class="container-fluid bg-blue-img pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="#" class="text-decoration-none">
+                        <div class="d-flex flex-column justify-content-center align-items-center page-link pt-5 pb-5">
+                            <i class="fa fa-graduation-cap"></i>
+                            <h3>Fakultetlar</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#" class="text-decoration-none">
+                        <div class="d-flex flex-column justify-content-center align-items-center page-link pt-5 pb-5">
+                            <i class="fa fa-users"></i>
+                            <h3>Kafedralar</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#" class="text-decoration-none">
+                        <div class="d-flex flex-column justify-content-center align-items-center page-link pt-5 pb-5">
+                            <i class="fa fa-tasks"></i>
+                            <h3>Institut nizomi</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#" class="text-decoration-none">
+                        <div class="d-flex flex-column justify-content-center align-items-center page-link pt-5 pb-5">
+                            <i class="fa fa-user-tie"></i>
+                            <h3>Ilmiy kengash</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Statistic 2 -->
+    <div class="container-fluid  pt-5 pb-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="#" class="text-decoration-none">
+                        <div class="d-flex flex-column justify-content-center align-items-center stat-link pt-4 pb-4">
+                            <h5>Professor-o'qituvchilar</h5>
+                            <i class="fa fa-user-tie"></i>
+                            <h3>216</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#" class="text-decoration-none">
+                        <div class="d-flex flex-column justify-content-center align-items-center stat-link pt-4 pb-4">
+                            <h5>Jami talabalar</h5>
+                            <i class="fa fa-user-friends"></i>
+                            <h3>2595</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#" class="text-decoration-none">
+                        <div class="d-flex flex-column justify-content-center align-items-center stat-link pt-4 pb-4">
+                            <h5>Arm fondi</h5>
+                            <i class="fa fa-book"></i>
+                            <h3>143000</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#" class="text-decoration-none">
+                        <div class="d-flex flex-column justify-content-center align-items-center stat-link pt-4 pb-4">
+                            <h5>Ta'lim yo'nalishlari</h5>
+                            <i class="fa fa-user-tie"></i>
+                            <h3>22</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Link -->
+    <div class="container-fluid pt-5 pb-5">
+        <div class="container">
+            <div class="row link">
+                <div class="col-lg-2">
+                    <a href=""><img src="./img/1-min.png" class="img-thumbnail" alt=""></a>
+                </div>
+                <div class="col-lg-2">
+                    <a href=""><img src="./img/2-min.png" class="img-thumbnail" alt=""></a>
+                </div>
+                <div class="col-lg-2">
+                    <a href=""><img src="./img/3-min.png" class="img-thumbnail" alt=""></a>
+                </div>
+                <div class="col-lg-2">
+                    <a href=""><img src="./img/4-min.png" class="img-thumbnail" alt=""></a>
+                </div>
+                <div class="col-lg-2">
+                    <a href=""><img src="./img/6-min.png" class="img-thumbnail" alt=""></a>
+                </div>
+                <div class="col-lg-2">
+                    <a href=""><img src="./img/f39dfc5422922d0ed91f8a82fbfe14d5-min.png" class="img-thumbnail" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="container-fluid footer pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3 class="text-uppercase text-white mb-5">Biz haqimizda</h3>
+                    <div class="d-flex align-items-center mt-4">
+                        <img src="./img/logo-white-min.png" width="150px" class="me-2" alt="">
+                        <h4 class="text-center text-white">Samarqand iqtisodiyot va servis instituti</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="text-uppercase text-white mb-4">Aloqa</h3>
+                    <div class="mt-4">
+                        <p><i class="fa fa-home"></i> Samarqand sh. Amir Temur ko`chasi 9-uy</p>
+                        <p><i class="fa fa-phone"></i> +998 (66) 233-73-68</p>
+                        <p><i class="fa fa-envelope"></i> sies_info@edu.uz</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="text-uppercase text-white mb-4">Xarita</h3>
+                    <div class="map">
+                        <div class="gmap_canvas"><iframe width="100%" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=9%20Amir%20Temur%20ko'chasi%2C%20Samarqand%20140100%2C%20%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer-bottom pt-4 pb-4">
+        <div class="container">
+            <div class="d-flex justify-content-between"></div>
+        </div>
+    </div>
+    <a href="#" id="to-top" class="btn btn-primary to-top to-top-hide"><i class="fa fa-arrow-alt-circle-up"></i></a>
+    <script src="js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        let y = 16;
+        function adjus() {
+            document.getElementById('html').classList.toggle('filter');
+        }
+        function plus() {
+            y = y + 2
+            document.body.style.fontSize = y+"px"
+        }
+        function def() {
+            y = 16
+            document.body.style.fontSize = y+"px"
+        }
+        function minus() {
+            y = y - 2
+            document.body.style.fontSize = y+"px"
+        }
+        function img() {
+            document.querySelectorAll('img').style.display = 'none'
+        }
+        $(document).bind("contextmenu",function(e){
+            return false;
+        });
+        
+        window.addEventListener('DOMContentLoaded', () => {
+            const loader = document.querySelector('.loader')
+            let count = 0
+            let counter = setInterval(function(){
+                    if(count < 101) {
+                        setTimeout( () => {
+                            loader.style.opacity = '0'
+                            setTimeout( () => {
+                                loader.style.display = 'none'
+                            }, 2000)
+                        }, 6000)
+                        $('.count').text(count + '%')
+                        $('.load').css('width' , count + '%')
+                        count++
+                    }
+                    else {
+                        clearInterval(counter)
+                    }
+                }, 30)
+        })
+        $(document).ready(function(){
+            $(window).bind('scroll', function() {
+                if ($(window).scrollTop() > 400) {
+                    $('#to-top').addClass('to-top-view');
+                    $('#to-top').removeClass('to-top-hide');
+                }
+                else {
+                    $('#to-top').removeClass('to-top-view');
+                    $('#to-top').addClass('to-top-hide');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

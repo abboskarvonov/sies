@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="count"></div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                let count = 0;
+                let counter = setInterval(function(){
+                    if(count < 101) {
+                        $('.count').text(count + '%')
+                        count++
+                    }
+                    else {
+
+                    }
+                })
+            })
+        </script>
+    </body>
+</html>
